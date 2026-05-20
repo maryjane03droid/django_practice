@@ -1,19 +1,20 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-</head>
-<body>
+{% extends 'pages/base.html' %}
 
-<h1>Contact Page</h1>
+{% block title %}Contact | MamaCare Maternity{% endblock %}
 
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/contact/">Contact</a>
+{% block content %}
 
-<p>Email: test@gmail.com</p>
+<div class="container">
+    <h1>Contact Us</h1>
 
-</body>
-</html>
+    <div class="contact-box">
+        <p>We are happy to support you during your pregnancy journey.</p>
+
+        <p><strong>Phone:</strong> +254 700 000 000</p>
+        <p><strong>Email:</strong> info@mamacare.com</p>
+        <p><strong>Location:</strong> Nairobi, Kenya</p>
+        <p><strong>Working Hours:</strong> Monday - Saturday, 8:00 AM - 5:00 PM</p>
+    </div>
+</div>
+
+{% endblock %}
