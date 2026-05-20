@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}MamaCare Maternity{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'pages/style.css' %}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">MamaCare</div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/services/">Services</a>
+        <a href="/tips/">Pregnancy Tips</a>
+        <a href="/contact/">Contact</a>
+    </div>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <p>&copy; 2026 MamaCare Maternity. Caring for mothers and babies.</p>
+</footer>
+
+</body>
+</html>
