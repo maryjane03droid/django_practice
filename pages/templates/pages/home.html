@@ -1,21 +1,49 @@
+{% extends 'pages/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-</head>
-<body>
 
-<h1>Welcome Home</h1>
+{% block title %}Home | MamaCare Maternity{% endblock %}
 
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/contact/">Contact</a>
+{% block content %}
 
-<p>This is my first Django website.</p>
- <img src="{% static 'pages/images/nature.jpg' %}" width="500">
+<section class="hero">
+    <div class="hero-text">
+        <h1>Welcome, Dear Mother</h1>
 
+        <p>
+            Pregnancy is a beautiful journey filled with hope, change, and many questions.
+            At MamaCare Maternity, we are here to walk with you gently, from your first
+            antenatal visit to the safe arrival of your baby.
+        </p>
 
-</body>
-</html>
+        <p>
+            You deserve care, comfort, and clear information. This website gives you simple
+            guidance to help you feel confident, prepared, and supported.
+        </p>
+
+        <a class="btn" href="/services/">View Our Services</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="{% static 'pages/images/pregnant-mother.jpg' %}" alt="Pregnant mother">
+    </div>
+</section>
+
+<section class="two-sections">
+    <div class="section-box">
+        <h2>Mother Care</h2>
+        <p>
+            We share useful information about antenatal visits, healthy eating,
+            rest, emotional support, and safe pregnancy habits.
+        </p>
+    </div>
+
+    <div class="section-box">
+        <h2>Baby Preparation</h2>
+        <p>
+            We help mothers prepare for delivery, breastfeeding, newborn care,
+            and the first days after birth.
+        </p>
+    </div>
+</section>
+
+{% endblock %}

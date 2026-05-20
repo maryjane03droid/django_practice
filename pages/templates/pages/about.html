@@ -1,19 +1,33 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-</head>
-<body>
+{% extends 'pages/base.html' %}
 
-<h1>About Page</h1>
+{% block title %}About | MamaCare Maternity{% endblock %}
 
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/contact/">Contact</a>
+{% block content %}
 
-<p>We are learning Django.</p>
+<div class="container">
+    <h1>About MamaCare Maternity</h1>
 
-</body>
-</html>
+    <p class="intro">
+        MamaCare Maternity is a simple maternity support website created to guide
+        pregnant mothers with friendly, clear, and easy-to-understand information.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h2>Our Mission</h2>
+            <p>To support pregnant mothers with simple, caring, and reliable pregnancy guidance.</p>
+        </div>
+
+        <div class="card">
+            <h2>Our Vision</h2>
+            <p>To see every mother feel safe, informed, respected, and confident during pregnancy.</p>
+        </div>
+
+        <div class="card">
+            <h2>Our Values</h2>
+            <p>Care, respect, privacy, patience, kindness, and mother-centred support.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
